@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="simple.css" />
+	</head>
+	<body>
+		<div id="roll" style="touch-action: manipulation;">
+			<table>
+				<thead>
+					<tr style="font-size: 64px;">
+						<th style="text-align: center;">&#x2680</th>
+						<th style="text-align: center;">&#x2681</th>
+						<th style="text-align: center;">&#x2682</th>
+						<th style="text-align: center;">&#x2683</th>
+						<th style="text-align: center;">&#x2684</th>
+						<th style="text-align: center;">&#x2685</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td id="ones" style="text-align: center;">0</td>
+						<td id="twos" style="text-align: center;">0</td>
+						<td id="threes" style="text-align: center;">0</td>
+						<td id="fours" style="text-align: center;">0</td>
+						<td id="fives" style="text-align: center;">0</td>
+						<td id="sixes" style="text-align: center;">0</td>
+					</tr>
+					<tr style="font-family: monospace;">
+						<td><button type="button" style="width: 3em; margin: 5px;" onclick="add(1)">+</button></td>
+						<td><button type="button" style="width: 3em; margin: 5px;" onclick="add(2)">+</button></td>
+						<td><button type="button" style="width: 3em; margin: 5px;" onclick="add(3)">+</button></td>
+						<td><button type="button" style="width: 3em; margin: 5px;" onclick="add(4)">+</button></td>
+						<td><button type="button" style="width: 3em; margin: 5px;" onclick="add(5)">+</button></td>
+						<td><button type="button" style="width: 3em; margin: 5px;" onclick="add(6)">+</button></td>
+					</tr>
+					<tr style="font-family: monospace;">
+						<td><button type="button" style="width: 3em; margin: 5px;" onclick="sub(1)">-</button></td>
+						<td><button type="button" style="width: 3em; margin: 5px;" onclick="sub(2)">-</button></td>
+						<td><button type="button" style="width: 3em; margin: 5px;" onclick="sub(3)">-</button></td>
+						<td><button type="button" style="width: 3em; margin: 5px;" onclick="sub(4)">-</button></td>
+						<td><button type="button" style="width: 3em; margin: 5px;" onclick="sub(5)">-</button></td>
+						<td><button type="button" style="width: 3em; margin: 5px;" onclick="sub(6)">-</button></td>
+					</tr>
+					<tr>
+						<td style="text-align:center;" colspan="6"><button type="button" style="width: 6em; margin: 5px;" onclick="reset()">Reset</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="expectation" style="font-size: larger;"/>
+		<script src="data.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>
